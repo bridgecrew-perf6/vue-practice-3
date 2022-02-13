@@ -1,26 +1,23 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <h2>Hello Compositon API</h2>
+  </div>
+  <TestComponent />
 </template>
-
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import TestComponent from "./components/composition/TestComponent";
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    TestComponent,
+  },
+  data() {
+    return {};
+  },
+  computed: {},
+  watch: {},
+  ditrectives: {},
+  methods: {},
+};
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style></style>
